@@ -57,7 +57,7 @@ function About() {
             <div>
                 <SectionTitle title="About Me"/>
             </div>
-            <div ref={containerRef} className="flex flex-row flex-wrap border-2 rounded-md border-black bg-linear-[25deg,#272727,#0C0D0F,#1E1E1E] px-16 py-16 gap-2" style={{width:'100%'}}>
+            <div ref={containerRef} className="flex flex-row flex-wrap border-2 rounded-md border-black bg-linear-[25deg,#272727,#0C0D0F,#1E1E1E] px-16 py-16 gap-2 justify-center" style={{width:'100%'}}>
                 {Array.from({ length: flapCount }, (_, index) => (
                     <FlapComponent key={index} num={index + 1} />
                 ))}
