@@ -3,7 +3,8 @@
 @theme {
   --color-isabeline: #F2EFE9;
   --color-outerspace: #4C5760;
-  --font-display: "Helvetica Neue"
+  --font-display: "Helvetica Neue";
+  --color-jetblack: #2F2F2D;  
 }
 
 #root {
