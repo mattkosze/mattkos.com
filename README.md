@@ -1,0 +1,1 @@
+This is a repo containing my personal website, built using a combination of Vite, React, Typescript, and Tailwind Css. I particularly love the split flap display on the home page as well as the bookcase on the reading page.
