@@ -25,7 +25,7 @@ function Experience() {
             title: "Boston University",
             subtitle: "BS in Computer Science, Psychology Minor",
             date: "September 2023 - May 2027",
-            description: "Spending a few years doing stuff :). Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and neurophysiological psychology.\n\nSpending my sophomore summer doing the BU Summer Accelerator for my startup Score.\n\nVery blessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystems."
+            description: "Spending a few years doing stuff :). Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and psychology.\n\nSpending my sophomore summer doing the BU Summer Accelerator for my startup Score.\n\nVery blessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystems."
         },
         {
             id: "score",

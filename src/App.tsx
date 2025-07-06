@@ -1,22 +1,24 @@
 import './styles/App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Hero from './components/hero';
-import About from './components/about';
-import Experience from './components/experience';
+import Home from './pages/home';
+import Reading from './pages/reading';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div className="flex flex-col bg-isabeline min-h-screen">
-      <Navbar/>
-      <main className="flex-grow">
-        <Hero/>
-        <About/>
-        <Experience/>
-      </main>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="flex flex-col bg-isabeline min-h-screen">
+        <Navbar/>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/reading" element={<Reading />} />
+          </Routes>
+        </main>
+        <Footer/>
+      </div>
+    </Router>
   )
 }
 
