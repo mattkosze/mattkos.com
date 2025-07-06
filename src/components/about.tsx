@@ -22,15 +22,12 @@ function About() {
     const calculateFlaps = () => {
         if (!containerRef.current) return null
 
-        // Get container dimensions
         const containerStyle = window.getComputedStyle(containerRef.current)
         const paddingLeft = parseFloat(containerStyle.paddingLeft)
         const paddingRight = parseFloat(containerStyle.paddingRight)
         
-        // Calculate available width more accurately
         const containerWidth = containerRef.current.clientWidth - paddingLeft - paddingRight
         
-        // Account for gap between flaps (2px from your CSS)
         const flapWidth = 36
         const gapSize = 8
         
@@ -46,30 +43,23 @@ function About() {
     const formatTextForDisplay = (text: string, flapsPerLine: number, rows: number, totalFlaps: number) => {
         if (!text || flapsPerLine <= 0) return []
 
-        // Create a more robust word wrapping algorithm
         const words = text.split(" ")
         const textLines: string[] = []
         let currentLine = ""
         let currentLineLength = 0
         
-        // Process each word, considering actual length + space
         for (const word of words) {
-            // Account for space + word length
             const wordWithSpace = currentLineLength > 0 ? " " + word : word
             
-            // Check if adding this word would exceed the line length
             if (currentLineLength + wordWithSpace.length <= flapsPerLine) {
                 currentLine += wordWithSpace
                 currentLineLength += wordWithSpace.length
             } else {
-                // If the word itself is longer than a line, we need to split it
                 if (word.length >= flapsPerLine) {
-                    // If we have content on the current line, push it first
                     if (currentLine) {
                         textLines.push(currentLine)
                     }
                     
-                    // Split long word across multiple lines
                     let remainingWord = word
                     while (remainingWord.length > 0) {
                         const chunk = remainingWord.substring(0, flapsPerLine)
@@ -77,11 +67,9 @@ function About() {
                         remainingWord = remainingWord.substring(flapsPerLine)
                     }
                     
-                    // Reset for next line
                     currentLine = ""
                     currentLineLength = 0
                 } else {
-                    // Push current line and start a new one with this word
                     textLines.push(currentLine)
                     currentLine = word
                     currentLineLength = word.length
@@ -94,21 +82,16 @@ function About() {
             textLines.push(currentLine)
         }
         
-        // Create result array with null placeholders
         const result: (string | null)[] = Array(totalFlaps).fill(null)
         
-        // Center text vertically
         const verticalOffset = Math.max(0, Math.floor((rows - textLines.length) / 2))
         
-        // Place each line in the result array
         for (let lineIndex = 0; lineIndex < textLines.length; lineIndex++) {
             const line = textLines[lineIndex]
             
-            // Center the line horizontally
             const horizontalOffset = Math.floor((flapsPerLine - line.length) / 2)
             const rowStart = (verticalOffset + lineIndex) * flapsPerLine
             
-            // Add each character to the result
             for (let charIndex = 0; charIndex < line.length; charIndex++) {
                 const position = rowStart + horizontalOffset + charIndex
                 if (position < totalFlaps) {
@@ -189,7 +172,6 @@ function About() {
 
         const { flapsInRow, totalRows, totalFlaps } = flaps
         
-        // Calculate how the text should be displayed
         const formattedText = formatTextForDisplay(
             Abouts[currentTextIndex].toUpperCase(),
             flapsInRow,
@@ -197,18 +179,14 @@ function About() {
             totalFlaps
         )
         
-        // Set the target letters
         setTargetLetters(formattedText)
         
-        // Clear any existing rotation timer
         if (textRotationTimerRef.current) {
             clearTimeout(textRotationTimerRef.current)
         }
         
-        // Schedule the next text change after animation completes plus viewing time
-        // Animation takes ~2 seconds (based on the interval in FlapComponent)
-        const animationTime = 2500 // 2.5 seconds for animation to complete
-        const viewingTime = 12500 // 12.5 seconds for reading
+        const animationTime = 1500
+        const viewingTime = 12500
         
         textRotationTimerRef.current = setTimeout(() => {
             setCurrentTextIndex((prevIndex) => (prevIndex + 1) % Abouts.length)
@@ -222,7 +200,7 @@ function About() {
     }, [currentTextIndex, isInitialLoad])
 
     return (
-        <div className="flex flex-col gap-10 px-2 sm:px-14">
+        <div className="flex flex-col gap-20 pb-30 px-2 sm:px-14">
             <div>
                 <SectionTitle title="About Me"/>
             </div>

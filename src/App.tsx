@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Hero from './components/hero';
 import About from './components/about';
+import Experience from './components/experience';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <main className="flex-grow">
         <Hero/>
         <About/>
+        <Experience/>
       </main>
       <Footer/>
     </div>
