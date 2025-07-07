@@ -85,7 +85,6 @@ function Experience() {
                                 key={project.id}
                                 path={project.path} 
                                 altText={project.altText}
-                                isSelected={selectedProject.id === project.id}
                                 onClick={() => setSelectedProject(project)}
                             />
                         ))}

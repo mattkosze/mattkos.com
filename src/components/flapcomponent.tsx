@@ -7,7 +7,6 @@ interface FlapComponentProps {
 
 function FlapComponent({ num, targetLetter = null }: FlapComponentProps) {
   const [currentChar, setCurrentChar] = useState(" ");
-  const [isAnimating, setIsAnimating] = useState(false);
   const chars = " ABCDEFGHIJKLMNOPQRSTUVWXYZ01248,.";
 
   useEffect(() => {
@@ -15,16 +14,13 @@ function FlapComponent({ num, targetLetter = null }: FlapComponentProps) {
       setCurrentChar(" ");
       return;
     }
-    
-    setIsAnimating(true);
-    
+        
     let startChar = chars.indexOf(currentChar);
     if (startChar === -1) startChar = 0;
     
     const targetIndex = chars.indexOf(targetLetter);
     if (targetIndex === -1) {
       setCurrentChar(targetLetter);
-      setIsAnimating(false);
       return;
     }
     
@@ -38,7 +34,6 @@ function FlapComponent({ num, targetLetter = null }: FlapComponentProps) {
       // Stop when we reach the target character
       if (chars[currentIndex] === targetLetter) {
         clearInterval(interval);
-        setIsAnimating(false);
       }
     }, 100 + Math.random() * 50); // Slightly randomize animation speed
     

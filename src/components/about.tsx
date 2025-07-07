@@ -15,7 +15,6 @@ function About() {
     const [currentTextIndex, setCurrentTextIndex] = useState(0)
     const [isInitialLoad, setIsInitialLoad] = useState(true)
     const [flapsPerRow, setFlapsPerRow] = useState(0)
-    const [totalRows, setTotalRows] = useState(0)
     const [targetLetters, setTargetLetters] = useState<(string | null)[]>([])
     const textRotationTimerRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -34,10 +33,9 @@ function About() {
         const flapsInRow = Math.max(1, Math.floor((containerWidth + gapSize) / flapWidth))
         
         const minFlaps = 140
-        const totalRows = Math.ceil(minFlaps / flapsInRow)
-        const totalFlaps = totalRows * flapsInRow
+        const totalFlaps = (Math.ceil(minFlaps / flapsInRow)) * flapsInRow
 
-        return { flapsInRow, totalFlaps, totalRows }
+        return { flapsInRow, totalFlaps }
     }
 
     const formatTextForDisplay = (text: string, flapsPerLine: number, rows: number, totalFlaps: number) => {
@@ -107,10 +105,9 @@ function About() {
         const setupDisplay = () => {
             const flaps = calculateFlaps()
             if (flaps) {
-                const { flapsInRow, totalFlaps, totalRows } = flaps
+                const { flapsInRow, totalFlaps } = flaps
                 
                 setFlapsPerRow(flapsInRow)
-                setTotalRows(totalRows)
                 setFlapCount(totalFlaps)
                 
                 setTargetLetters(Array(totalFlaps).fill(null))
@@ -126,18 +123,17 @@ function About() {
         const handleResize = () => {
             const flaps = calculateFlaps()
             if (flaps) {
-                const { flapsInRow, totalFlaps, totalRows } = flaps
+                const { flapsInRow, totalFlaps } = flaps
                 
-                if (flapsInRow !== flapsPerRow || totalFlaps !== flapCount || totalRows !== totalRows) {
+                if (flapsInRow !== flapsPerRow || totalFlaps !== flapCount) {
                     setFlapsPerRow(flapsInRow)
-                    setTotalRows(totalRows)
                     setFlapCount(totalFlaps)
                     
                     if (!isInitialLoad) {
                         const formattedText = formatTextForDisplay(
                             Abouts[currentTextIndex].toUpperCase(),
                             flapsInRow,
-                            totalRows,
+                            5,
                             totalFlaps
                         )
                         setTargetLetters(formattedText)
@@ -170,12 +166,12 @@ function About() {
         const flaps = calculateFlaps()
         if (!flaps) return
 
-        const { flapsInRow, totalRows, totalFlaps } = flaps
+        const { flapsInRow, totalFlaps } = flaps
         
         const formattedText = formatTextForDisplay(
             Abouts[currentTextIndex].toUpperCase(),
             flapsInRow,
-            totalRows,
+            0,
             totalFlaps
         )
         

@@ -5,7 +5,7 @@ type ProjectCardProps = {
     onClick?: () => void,
 }
 
-function ProjectCard({ path, altText, isSelected = false, onClick }: ProjectCardProps) {
+function ProjectCard({ path, altText, onClick }: ProjectCardProps) {
     return (
         <div 
             className="bg-[#1E1E1E] border-1 border-black rounded-md aspect-square flex items-center justify-center min-w-40 sm:min-w-50 cursor-pointer transition-all"

@@ -1,10 +1,6 @@
 import { Bookshelf } from "../components/bookshelf"
 import { BookReviews } from "../components/bookreviews"
 
-function getBooks() {
-    return;
-}
-
 function Reading() {
     return (
         <div className="flex justify-center py-20">
