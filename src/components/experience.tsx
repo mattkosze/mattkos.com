@@ -31,7 +31,7 @@ function Experience() {
             id: "score",
             path: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/Score.png",
             altText: "Score Law",
-            logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/Score.png",
+            logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/ScoreBlack.png",
             title: "Score Law",
             subtitle: "Co-Founder",
             date: "January 2025 - Present",
