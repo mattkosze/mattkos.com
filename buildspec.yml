@@ -7,6 +7,8 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
+      - echo Install node.js types
+      - npm install --save-dev @types/node
 
   build:
     commands:
