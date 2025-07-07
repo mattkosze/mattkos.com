@@ -5,29 +5,13 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo Installing dependencies...
       - npm install
-
-  pre_build:
-    commands:
-      - echo Running linting...
-      - npm run lint
 
   build:
     commands:
-      - echo Building the React application...
       - npm run build
-
-  post_build:
-    commands:
-      - echo Build completed on `date`
 
 artifacts:
   base-directory: 'dist'
   files:
     - '**/*'
-
-cache:
-  paths:
-    - 'node_modules/**/*'
-    - '.npm/**/*'
