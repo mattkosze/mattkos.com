@@ -25,7 +25,7 @@ function Experience() {
             title: "Boston University",
             subtitle: "BS in Computer Science, Psychology Minor",
             date: "September 2023 - May 2027",
-            description: "Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and psychology.\n\nSpending my sophomore summer doing the BU Summer Accelerator for my startup Score.\n\nVery blessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystems."
+            description: "Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and psychology.\n\nSpending my sophomore summer doing the BU Summer Accelerator for my startup Score.\n\nVery blessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystem."
         },
         {
             id: "score",
@@ -45,7 +45,7 @@ function Experience() {
             title: "Telemate AI",
             subtitle: "Co-Founder",
             date: "February 2024 - November 2024",
-            description: "A lot of painful lessons here. We were building an AI-phone receptionist for restaurants that could make reservations, take orders, and answer questions -- all while sounding human.\n\nA masterclass in what not to do: omitting validation entirely, then muddling validation and sales, while building before knowing about the market, the list goes on and I'll make a blog post about this at some point.\n\nAssembled our team of me and three friends; created NLP models to aid in reservation scheduling; learned to write really detailed competitive analyses."
+            description: "A lot of painful lessons here. We were building an AI-phone receptionist for restaurants that could make reservations, take orders, and answer questions -- all while sounding human.\n\nA masterclass in what not to do: omitting validation entirely, then muddling validation and sales, while building before knowing about the market, and the list goes on -- I'll make a blog post about this at some point.\n\nAssembled our team of me and three friends; created NLP models to aid in reservation scheduling; learned to write really detailed competitive analyses."
         },
         {
             id: "914creps",
@@ -55,7 +55,7 @@ function Experience() {
             title: "914creps",
             subtitle: "Sole Proprietor",
             date: "May 2021 - May 2022",
-            description: "Started a reselling business during my sophomore year of high school and did about $48K YoY selling everything from Ps5's to fertilizer.\n\nOne day, I accidentally bought $1400 worth of shoes that I couldn't resell - all because I had no idea if they were profitable. That led to a project called ResellX, a tool that scraped resale prices in seconds so you could know if a purchase was worth your money. That failed because I was non-technical and hired a random to build it for me. We were too slow and the reselling market soon collapsed."
+            description: "Started a reselling business during my sophomore year of high school and did about $48K YoY selling everything from Ps5s to fertilizer.\n\nOne day, I accidentally bought $1400 worth of shoes that I couldn't resell - all because I had no idea if they were profitable. That led to a project called ResellX, a tool that scraped resale prices in seconds so you could know if a purchase was worth your money. That failed because I was non-technical and hired a random to build it for me. We were too slow and the reselling market soon collapsed."
         },
         {
             id: "tks",
