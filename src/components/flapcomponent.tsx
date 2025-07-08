@@ -43,7 +43,7 @@ function FlapComponent({ num, targetLetter = null }: FlapComponentProps) {
 
     return (
         <div className="rounded-xs border-x-[.4px] border-x-neutral-700 bg-[#18181A] w-7 h-8 flex justify-center items-center">
-            <h4 className="text-lg font-medium" id={`field_${num}`}>{currentChar}</h4>
+            <h4 className="text-lg font-medium text-white" id={`field_${num}`}>{currentChar}</h4>
         </div>
     )
 }
