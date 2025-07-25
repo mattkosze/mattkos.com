@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Reading from './pages/reading';
 import Video from './pages/video';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </main>
         <Footer/>
+        <Analytics />
       </div>
     </Router>
   )
