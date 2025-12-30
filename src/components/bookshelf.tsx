@@ -42,7 +42,7 @@ function BookComponent({book}: { book: Book }) {
             className="flex justify-center items-start h-[210px] w-[40px] flex-shrink-0" 
             style={{
                 background: spineColour, 
-                backgroundImage: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/spineTexture.jpg", 
+                backgroundImage: "url('https://mattkos-cicd.s3.us-east-2.amazonaws.com/spineTexture.jpg')",
                 backgroundBlendMode: "overlay",
                 cursor: 'pointer',
                 border: 'none',

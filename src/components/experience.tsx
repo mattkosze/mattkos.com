@@ -23,9 +23,19 @@ function Experience() {
             altText: "Boston University",
             logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/BU.png",
             title: "Boston University",
-            subtitle: "BS in Computer Science, Psychology Minor",
+            subtitle: "BA in Computer Science, Minor in Psychology",
             date: "September 2023 - May 2027",
-            description: "Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and psychology.\n\nSpending my sophomore summer doing the BU Summer Accelerator for my startup Score.\n\nVery blessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystem."
+            description: "Most of my time is spent at Innovate@BU working on personal projects and sliding in homework somewhere along the way. Particularly enjoyed algorithms, linear algebra, and assorted psychology courses.\n\nSpent my sophomore summer participating in the BU Summer Accelerator for my startup Score.\n\nBlessed to have a lot of great mentors at the BUild lab and the surrounding Boston startup ecosystem."
+        },
+        {
+            id: "Bain",
+            path: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/Bain.png",
+            altText: "Bain",
+            logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/Bain.png",
+            title: "Bain & Company",
+            subtitle: "Incoming Associate Consultant Intern",
+            date: "Summer 2026",
+            description: "Joining Bain Boston this coming summer as an Associate Consultant Intern. Hoping to work in the private equity group (PEG) and dive into a variety of industries at pace and at scale while working with exceptionally bright peers! \n\n Wouldn't have happened without a bunch of very kind people willing to share a bit of their own luck, and I'll forever be thankful for that!"
         },
         {
             id: "score",
@@ -34,8 +44,8 @@ function Experience() {
             logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/ScoreBlack.png",
             title: "Score Law",
             subtitle: "Co-Founder",
-            date: "January 2025 - Present",
-            description: "My first real \"startup\". Building a tool that allows criminal defense attorneys to see how a judge will rule on bail, motions, and even sentencing for their specific case.\n\nLeading a team of 4 while responsible for product, market discovery, and strategy; held over 70 customer discovery calls; affected the outcomes of multiple court cases; piloting the software with 14 attorneys.\n\nOne of 12 startups in the 2025 BU Summer Accelerator."
+            date: "January 2025 - August 2025",
+            description: "My first real \"startup\". We were building a tool that allowed criminal defense attorneys to see how a judge will rule on bail, motions, and even sentencing for their specific case.\n\nLed a team of 4 while responsible for product, market discovery, and strategy; held over 70 customer discovery calls; affected the outcomes of multiple court cases; piloting the software with 14 attorneys.\n\nOne of 12 startups in the 2025 BU Summer Accelerator."
         },
         {
             id: "telemate",

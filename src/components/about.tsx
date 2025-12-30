@@ -3,8 +3,8 @@ import FlapComponent from "./flapcomponent"
 import SectionTitle from "./sectiontitle"
 
 const Abouts = [
-    "Rising junior studying CS and psychology at Boston Uni. Previously a finance major for two days.",
-    "80% of my time is spent at Innovate@BU working on projects. Have learned a lot of things the hard way. Check out my blog.",
+    "Junior studying CS and psychology at Boston Uni. Previously a finance major for two days.",
+    "80% of my time is spent at Innovate@BU trying to create stuff. Have learned a lot of things the hard way.",
     "I love discovering problems and creating products to solve them. It's the ultimate way to create value.",
     "Very passionate about skiing, reading, and seeing new places. Recently explored Copenhagen during a four hour layover at CPH. Would totally recommend."
 ]
