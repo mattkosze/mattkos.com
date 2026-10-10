@@ -33,9 +33,9 @@ function Experience() {
             altText: "Bain",
             logoPath: "https://mattkos-cicd.s3.us-east-2.amazonaws.com/Bain.png",
             title: "Bain & Company",
-            subtitle: "Incoming Associate Consultant Intern",
+            subtitle: "Associate Consultant Intern, Incoming AC",
             date: "Summer 2026",
-            description: "Joining Bain Boston this coming summer as an Associate Consultant Intern. Hoping to work in the private equity group (PEG) and dive into a variety of industries at pace and at scale while working with exceptionally bright peers! \n\n Wouldn't have happened without a bunch of very kind people willing to share a bit of their own luck, and I'll forever be thankful for that!"
+            description: "Joined Bain Boston this summer as an Associate Consultant Intern. Had a blast working in the private equity group (PEG) with on 5 cases over my 8 weeks. \n\n Wouldn't have happened without a bunch of very kind people willing to share a bit of their own luck, and I'll forever be thankful for that!"
         },
         {
             id: "score",
